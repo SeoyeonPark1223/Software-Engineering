@@ -9,5 +9,5 @@ void LogoutUI::showInterface(std::ofstream& out_fp) {
 
 void LogoutUI::logoutRequest(std::ofstream& out_fp) {
     auto result = logout->logout();
-    out_fp << result << std::endl;
+    out_fp << "> " << result << "\n\n";
 }

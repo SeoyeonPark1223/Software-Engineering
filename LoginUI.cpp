@@ -13,6 +13,6 @@ void LoginUI::inputLoginInfo(std::ifstream& in_fp, std::ofstream& out_fp) {
 
     auto result = login->login(id, password);
 
-    out_fp << std::get<0>(result) << " "
-           << std::get<1>(result) << std::endl;
+    out_fp << "> " << std::get<0>(result) << " "
+           << std::get<1>(result) << "\n\n";
 }

@@ -8,11 +8,11 @@ void RentalBicycleUI::showInterface(std::ofstream& out_fp) {
 }
 
 void RentalBicycleUI::rentalBicycleRequest(std::ifstream& in_fp, std::ofstream& out_fp) {
-    std::string id, brand;
-    in_fp >> id >> brand;
+    std::string id;
+    in_fp >> id;
 
-    auto result = rentalBicycle->rentalBicycle(id, brand);
+    auto result = rentalBicycle->rentalBicycle(id);
     
-    out_fp << std::get<0>(result) << " "
-           << std::get<1>(result) << std::endl;
+    out_fp << "> " << std::get<0>(result) << " "
+           << std::get<1>(result) << "\n\n";
 }

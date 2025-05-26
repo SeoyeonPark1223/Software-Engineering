@@ -10,7 +10,7 @@ class RentalBicycle {
         UserCollection* userCollection;
     public: 
         RentalBicycle(BicycleCollection* bicycleCollection, UserCollection* userCollection);
-        std::tuple<std::string, std::string> rentalBicycle(std::string id, std::string brand);
+        std::tuple<std::string, std::string> rentalBicycle(std::string id);
 };
 
 #endif

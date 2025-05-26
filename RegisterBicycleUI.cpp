@@ -13,6 +13,6 @@ void RegisterBicycleUI::inputBicycleInfo(std::ifstream& in_fp, std::ofstream& ou
 
     std::tuple<std::string, std::string> result = registerBicycle->registerBicycle(id, brand);
     
-    out_fp << std::get<0>(result) << " "
-           << std::get<1>(result) << std::endl;
+    out_fp << "> " << std::get<0>(result) << " "
+           << std::get<1>(result) << "\n\n";
 }

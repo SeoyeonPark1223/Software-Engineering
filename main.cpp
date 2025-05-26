@@ -118,6 +118,7 @@ void doTask(std::ifstream& in_fp, std::ofstream& out_fp) {
                     case 1: { // 6.1. 종료
                         ExitUI exitUI;
                         exitUI.exitProgram(out_fp);
+                        is_program_exit = 1;
                         break; 
                     }
                 }

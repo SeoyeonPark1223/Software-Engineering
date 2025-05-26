@@ -13,7 +13,7 @@ void SignupUI::inputSignupInfo(std::ifstream& in_fp, std::ofstream& out_fp) {
 
     auto result = signup->signup(id, password, phoneNumber);
 
-    out_fp << std::get<0>(result) << " "
+    out_fp << "> " << std::get<0>(result) << " "
            << std::get<1>(result) << " "
-           << std::get<2>(result) << std::endl;
+           << std::get<2>(result) << "\n\n";
 }

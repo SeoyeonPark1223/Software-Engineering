@@ -3,7 +3,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall 
 
 # 실행 파일 이름
-TARGET = bike_app
+TARGET = bicycle_app
 
 # 소스 파일 정의
 SRCS = \
